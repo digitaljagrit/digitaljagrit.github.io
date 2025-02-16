@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Jagrit Arora Portfolio</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/aos.css">
+
+	<link rel="stylesheet" href="css/ionicons.min.css">
+
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/style.css">
+
+
+
+	<style>
+		/*======================================
+//--//-->   ABOUT
+======================================*/
+
+		.about-mf .box-shadow-full {
+			padding-top: 4rem;
+			padding-bottom: 4rem;
+		}
+
+		.about-mf .about-img {
+			margin-bottom: 2rem;
+		}
+
+		.about-mf .about-img img {
+			margin-left: 10px;
+		}
+
+
+		.skill-mf .progress {
+			/* background-color: #cde1f8; */
+			margin: .5rem 0 1.2rem 0;
+			border-radius: 0;
+			height: .7rem;
+		}
+
+		.skill-mf .progress .progress-bar {
+			height: .7rem;
+			background-color: #ffbd39;
+		}
+
+
+		/* Animation styles */
+		#typing-animation {
+			position: relative;
+			font-size: 30px;
+			font-weight: bold;
+			color: rgb(255, 255, 255);
+			overflow: hidden;
+			white-space: nowrap;
+			animation: typing 3s steps(20, end) infinite;
+		}
+
+		#typing-animation:before {
+			content: "";
+			/* position: absolute; */
+			top: 0;
+			left: 0;
+			width: 0;
+			height: 100%;
+			background-color: #ccc;
+			animation: typing-cursor 0.5s ease-in-out infinite;
+		}
+
+		@keyframes typing {
+			from {
+				width: 0;
+			}
+
+			to {
+				width: 100%;
+			}
+		}
+
+		@keyframes typing-cursor {
+			from {
+				width: 5px;
+			}
+
+			to {
+				width: 0;
+			}
+		}
+
+
+		/* project image zoom effect */
+
+		.zoom-effect {
+			overflow: hidden;
+			transition: transform 0.3s ease-out;
+		}
+
+		.zoom-effect:hover {
+			transform: scale(1.1);
+		}
+	</style>
+
+
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">Jagrit Arora</a>
+			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav nav ml-auto">
+					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+					<li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+					<li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<section id="home-section" class="hero">
+		<div class="home-slider  owl-carousel">
+			<div class="slider-item ">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
+						data-scrollax-parent="true">
+						<div class="one-third js-fullheight order-md-last img"
+							style="background-image:url(images/jagrit_arora_hero_banner.png);">
+							<div class="overlay"></div>
+						</div>
+						<div class="one-forth d-flex  align-items-center ftco-animate"
+							data-scrollax=" properties: { translateY: '70%' }">
+							<div class="text">
+								<span class="subheading">Hello!</span>
+								<h1 class="mb-4 mt-3">I'm <span>Jagrit Arora</span></h1>
+
+								<!-- Element to contain animated typing -->
+								<span id="typing-animation"></span>
+
+								<script>
+
+									// Initialize the typing animation
+									const typingAnimationElement = document.getElementById('typing-animation');
+
+									// Create an array of typing text
+									const typingTexts = [
+										'SEO Expert  ',
+										'Social Media Marketer  ',
+										'Paid Ads Specialist   ',
+									];
+
+									// Create a function to display the typing animation for a given text
+									function playTypingAnimation(text) {
+										// Loop through each character and add it to the element
+										for (let i = 0; i < text.length; i++) {
+											setTimeout(() => {
+												typingAnimationElement.textContent += text[i];
+											}, i * 200); // Increase the delay to slow down the typing animation
+										}
+
+										// Once the animation is complete, reset the text and start over
+										setTimeout(() => {
+											typingAnimationElement.textContent = '';
+											playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+										}, text.length * 200);
+									}
+
+									// Start the typing animation loop
+									playTypingAnimation(typingTexts[0]);
+
+								</script>
+
+								<br>
+								<br>
+								<h2>A Full-Stack Digital Marketer</h2>
+								<h6 class="d-flex" style="margin-bottom: 0">With 4+ years of experience</h6>
+								<br>
+								<p><a href="#contact-section" class="btn btn-primary py-3 px-4">Let's Connect!</a>
+									<a href="#project-section" class="btn btn-white btn-outline-white py-3 px-4">See my
+										works</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+		<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+					<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+										<div class="about-img">
+											<img src="images/jagrit_linkedin_profile_pic.png"
+												class="img-fluid rounded b-shadow-a" alt="">
+										</div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+										<div class="about-info">
+											<p><span class="title-s">Name: </span> <span>Jagrit Arora</span></p>
+											<p><span class="title-s">Job Role: </span> <span>Digital Marketing
+													Specialist</span></p>
+											<p><span class="title-s">Experience: </span> <span>4 Years 3 Months</span>
+											</p>
+											<p><span class="title-s">Address: </span> <span>Karnal, India</span></p>
+										</div>
+									</div>
+								</div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skills</p>
+									<span>SEO & Linkbuilding</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;"
+											aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+
+									<span>Paid Ads (Google Ads, Meta Ads etc.) </span> <span
+										class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%"
+											aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+
+									<span>Social Media Management</span> <span class="pull-right">85%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%"
+											aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+
+									<span>Lead Generation</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%"
+											aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+
+									<span>Data Analysis</span> <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 80%"
+											aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+
+								<p>With 4+ years in digital marketing, I specialize in SEO, paid ads, and growth-focused
+									campaigns.
+									I've driven 1M+ monthly organic traffic, executed high-ROI lead generation, and
+									optimized Meta & Google Ads for sales, brand awareness,
+									and conversions. My goal is to help businesses maximize their online presence with
+									data-driven marketing strategies that deliver results.</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Digital Marketing &amp; SEO</span>
+									</li>
+									<li class="d-flex"><span>Domain:</span> <span>B2B, SaaS, Ecommerce &amp; B2C</span>
+									</li>
+									<li class="d-flex"><span>Education:</span> <span>MCA in Data Analytics</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
+									<li class="d-flex"><span>Tools:</span> <span>Ahrefs, Semrush, Canva, Buffer,
+											Hubspot, GA4, GSC &amp; Tableau</span></li>
+									<li class="d-flex"><span>Other Skills:</span> <span>A/B Testing, Web Development,
+											Excel, Google Analytics &amp; Wordpress</span></li>
+									<li class="d-flex"><span>Interest:</span> <span>Travelling, Problem Solving,
+											Photography</span></li>
+
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="30">0</span> <span>+</span>
+									<span>&nbsp; Projects completed</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/jagrit-arora/"
+										class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<section class="ftco-section ftco-no-pb" id="resume-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-10 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Resume</h1>
+					<h2 class="mb-4">Resume</h2>
+					<p>Digital Marketing Specialist with 4+ years of experience driving business strategies & results
+						through data-driven insights. Proven expertise in SEO, Google Ads, Meta Ads and Social Media
+						Management.</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<h1 class="big-4">Experience</h1>
+				<div class="underline"></div>
+			</div>
+			<br>
+
+			<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2022-Present</span>
+						<h2>Sr. Digital Marketing Specialist</h2>
+						<span class="position">DIGIGROWTHUP Pvt. Ltd.</span>
+						<p class="mt-4">DIGIGROWTHUP, a leading digital marketing agency in Karnal that provides
+							services all over the world.
+						<ul>
+							<li>Implemented SEO strategies that resulted in a 200% increase in organic traffic.
+
+							</li>
+							<li>Led SEO team (writers and executives), ensuring quality content and strategy. Conducted
+								On-Page SEO, backlinking, and competitor analysis for ranking improvements.</li>
+							<li>Reduced CPL by 30% through strategic ad targeting and optimization. </li>
+						</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2021-2022</span>
+						<h2>SEO Analyst</h2>
+						<span class="position">Grimbyte Technologies</span>
+						<p class="mt-4">Grimbyte Technologies is a data-driven digital marketing analytics and solutions
+							company.
+						<ul>
+							<li>Keyword Researching for their client's websites, Optimization of blog post to
+								rank higher in search results.</li>
+							<li>Monitor traffic fluctuations via Google Analytics and created reports + HARO Link
+								Building.
+							</li>
+							<li>Launched Email Marketing Campaigns using Snov.io for their clients.</li>
+							<li>Managing Interns and giving them tasks on daily basis. </li>
+						</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+
+			<br>
+			<br>
+
+			<div class="row">
+				<h1 class="big-4">Education</h1>
+				<div class="underline"></div>
+			</div>
+			<br>
+
+			<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2020-2023</span>
+						<h2>Bachelor of Computer Application (BCA)</h2>
+						<span class="position">Panipat Institute of Engineering & Technology</span>
+						<p class="mt-4">Grade: First Division.</p>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2018-2019</span>
+						<h2>Higher Secondary School (Non-Med.)</h2>
+						<span class="position">Dyal Singh Public School, Sec-7 Karnal-132001</span>
+						<p class="mt-4">Grade: 80%.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row justify-content-center mt-5">
+				<div class="col-md-6 text-center ftco-animate">
+					<p><a href="https://bit.ly/resume_jagrit" class="btn btn-primary py-4 px-5">Download CV</a></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="ftco-section" id="project-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-5">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Projects</h1>
+					<h2 class="mb-4">Projects</h2>
+					<p>Below are some of my Digital Marketing projects on SEO, Google Ads, Meta Ads, Social Media Management & Power BI.</p>
+				</div>
+			</div>
+			<div class="row d-flex">
+				<!-- Project 1 -->
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="#" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');" data-bs-toggle="modal" data-bs-target="#project1"></a>
+						<div class="text mt-3 float-right d-block">
+							<h3 class="heading"><a href="#" data-bs-toggle="modal" data-bs-target="#project1">SEO Projects & Linkbuilding</a></h3>
+							<p>Managed websites, Handled Content Writers, Responsible for Keyword Researching, Content Planning & involved in link-building activities.</p>
+						</div>
+					</div>
+				</div>
+				<!-- Project 2 -->
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="#" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');" data-bs-toggle="modal" data-bs-target="#project2"></a>
+						<div class="text mt-3 float-right d-block">
+							<h3 class="heading"><a href="#" data-bs-toggle="modal" data-bs-target="#project2">Meta Ad Projects</a></h3>
+							<p>Handled end to end meta ad campaigns from generation to scaling along with A/B testing.</p>
+						</div>
+					</div>
+				</div>
+				<!-- Project 3 -->
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="#" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');" data-bs-toggle="modal" data-bs-target="#project3"></a>
+						<div class="text mt-3 float-right d-block">
+							<h3 class="heading"><a href="#" data-bs-toggle="modal" data-bs-target="#project3">Google Ads Projects</a></h3>
+							<p>Created and managed Google Ads campaigns across multiple domains, optimizing keyword bids for maximum reach and performance.</p>
+						</div>
+					</div>
+				</div>
+				<!-- Project 4 -->
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="#" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');" data-bs-toggle="modal" data-bs-target="#project4"></a>
+						<div class="text mt-3 float-right d-block">
+							<h3 class="heading"><a href="#" data-bs-toggle="modal" data-bs-target="#project4">Social Media Management</a></h3>
+							<p>Developed content calendars based on thorough research, collaborated with video editors and graphic designers, and published optimized posts with relevant and trending hashtags.</p>
+						</div>
+					</div>
+				</div>
+				<!-- Project 5 -->
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="#" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');" data-bs-toggle="modal" data-bs-target="#project5"></a>
+						<div class="text mt-3 float-right d-block">
+							<h3 class="heading"><a href="#" data-bs-toggle="modal" data-bs-target="#project5">Email Marketing</a></h3>
+							<p>With proficiency in email marketing tools such as YAMM, Brevo Send, Mailchimp, Snov, and Mailmerge, I can craft impactful emails that drive conversions, whether targeting a cold or warm audience.</p>
+						</div>
+					</div>
+				</div>
+				<!-- Project 6 -->
+				<div class="col-md-4 d-flex ftco-animate">
+					<div class="blog-entry justify-content-end">
+						<a href="#" class="block-20 zoom-effect" style="background-image: url('images/proj_6.jpg');" data-bs-toggle="modal" data-bs-target="#project6"></a>
+						<div class="text mt-3 float-right d-block">
+							<h3 class="heading"><a href="#" data-bs-toggle="modal" data-bs-target="#project6">Data Visualization Using Power Bi</a></h3>
+							<p>I have expertise in creating interactive dashboards for analysis that enable better and more effective business decisions, while also identifying key areas for improvement.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+			<!-- Project Modals -->
+			<!-- Project 1 Modal with Carousel -->
+			<div class="modal fade" id="project1" tabindex="-1" aria-labelledby="project1Label" aria-hidden="true">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title" id="project1Label">Below are the some of my SEO projects.</h4>
+							<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+						</div>
+						<div class="modal-body">
+							<!-- Carousel for Project 1 -->
+							<div id="carouselProject1" class="carousel slide" data-bs-ride="carousel">
+								<div class="carousel-inner">
+									<!-- Slide 1 -->
+									<div class="carousel-item active">
+										<img src="images/proj1.jpg" class="d-block w-100 img-fluid mb-3" alt="SEO Project 1" style="margin-left: 15px; margin-right: 15px;">
+										<p><strong>🔹 Objective:</strong> Increase Traffic for an Educational Institute</p>
+										<p><strong>🔹 Details:</strong></p>
+										<ul>
+											<li>Managed Keyword Researching part of the website.</li>
+											<li>Optimized content and implemented targeted SEO strategies.</li>
+											<li>Managed a team of 5 content writers.</li>
+											<li>Stayed active on major trends in the niche and published related content timely to boost traffic.</li>
+										</ul>
+										<p><strong>🔹 Results:</strong> Successfully ranked most distance education-related keywords in the top 5 on SERPs, maintaining strong visibility in a competitive niche.</p>
+									</div>
+									<!-- Slide 2 -->
+									<div class="carousel-item">
+										<img src="images/proj4.jpg" class="d-block w-100 img-fluid mb-3" alt="SEO Project 2" style="margin-left: 15px; margin-right: 15px;">
+										<p><strong>🔹 Objective:</strong> Executed Link-Building Campaign for a Leading SaaS Company (Headquartered in US)</p>
+										<p><strong>🔹 Details:</strong></p>
+										<ul>
+											<li>Designed and executed a strategic link-building campaign.</li>
+											<li>Focused on acquiring high quality backlinks.</li>
+											<li>Conducted regular site audits and improved on-page SEO elements.</li>
+										</ul>
+										<p><strong>🔹 Results:</strong> Boosted keyword rankings, enhanced domain authority, and significantly improved organic search performance.</p>
+									</div>
+									<!-- Slide 3 -->
+									<div class="carousel-item">
+										<img src="images/proj2.jpg" class="d-block w-100 img-fluid mb-3" alt="SEO Project 3" style="margin-left: 15px; margin-right: 15px;">
+										<h3> Achieved a 206% Increase in Organic Traffic</h3>
+										<p><strong>🔹 Objective:</strong> Optimize overall SEO of the website</p>
+										<p><strong>🔹 Client:</strong> A plumbing company in Houston</p>
+										<p><strong>🔹 Details:</strong></p>
+										<ul>
+											<li>Implemented targeted SEO strategies.</li>
+											<li>Optimized meta tags, headings, and images.</li>
+											<li>Local SEO and service page optimization.</li>
+										</ul>
+										<p><strong>🔹 Results:</strong> Delivered a 206% growth in organic traffic within 6 months, significantly increasing leads and visibility.</p>
+									</div>
+									<!-- Slide 4 -->
+									<div class="carousel-item">
+										<img src="images/proj3.jpg" class="d-block w-100 img-fluid mb-3" alt="SEO Project 4" style="margin-left: 15px; margin-right: 15px;">
+										<h3> Achieved a 1105% Increase in Daily Traffic for an Education Website</h3>
+										<p><strong>🔹 Client:</strong> An education directory website</p>
+										<p><strong>🔹 Details:</strong></p>
+										<ul>
+											<li>Reworked internal linking structure for better crawlability.</li>
+											<li>Leveraged content optimization, technical SEO.</li>
+											<li>Conducted keyword analysis and enhanced content.</li>
+										</ul>
+										<p><strong>🔹 Results:</strong> Increased daily traffic from 98 to 1180 clicks in just 3 months, driving significantly more visibility and user engagement. Achieved top rankings for targeted keywords and boosted organic reach.</p>
+									</div>
+									<!-- Slide 5 -->
+									<div class="carousel-item">
+										<img src="images/proj5.jpg" class="d-block w-100 img-fluid mb-3" alt="SEO Project 5" style="margin-left: 15px; margin-right: 15px;">
+										<h3> SEO for a Revision Website Achieving Steady Growth</h3>
+										<p><strong>🔹 Client:</strong> Revision Village, a website catering to students</p>
+										<p><strong>🔹 Details:</strong></p>
+										<ul>
+											<li> Executed a comprehensive SEO strategy focused on content optimization & technical SEO.</li>
+											<li> Adapted strategies to ensure consistent growth despite frequent Google algorithm updates.</li>
+											<li> Authority-building for this website.</li>
+										</ul>
+										<p><strong>🔹 Results:</strong> Achieved steady growth in both domain authority and organic traffic over a 1-year period, enhancing the site's visibility and reliability for its target audience.</p>
+									</div>
+									<!-- Slide 6 -->
+									<div class="carousel-item">
+										<img src="images/proj6.jpg" class="d-block w-100 img-fluid mb-3" alt="SEO Project 6" style="margin-left: 15px; margin-right: 15px;">
+										<h3> Achieved a 215% Increase in Organic Traffic for a Clean Energy Company</h3>
+										<p><strong>🔹 Client:</strong> NRG</p>
+										<p><strong>🔹 Details:</strong></p>
+										<ul>
+											<li> Keyword targeting in the clean energy niche.</li>
+											<li> Leveraged data-driven insights to address on-page and off-page SEO opportunities.</li>
+											<li> Impleted SEO strategy focusing on content optimization.</li>
+										</ul>
+										<p><strong>🔹 Results:</strong></p>
+										<ul>
+											<li>Increased organic traffic by 215%, from 3,000 clicks per month to 9,453 clicks per month in just 7 months.</li>
+											<li>Enhanced the website's visibility and engagement in a highly competitive industry.</li>
+											<li>Ranked on very high difficulty keywords like “electric vehicle insurance” etc.</li>
+										</ul>
+									</div>
+									<!-- Slide 7 -->
+									<div class="carousel-item">
+										<img src="images/proj7.jpg" class="d-block w-100 img-fluid mb-3" alt="SEO Project 7" style="margin-left: 15px; margin-right: 15px;">
+										<h3> Boosted Domain and URL Authority Through Strategic Link-Building</h3>
+										<p><strong>🔹 Client:</strong> Consumer Voice</p>
+										<p><strong>🔹 Details:</strong></p>
+										<ul>
+											<li> Executed a focused link-building campaign targeting high-authority domains relevant to the client's niche.</li>
+											<li> Enhanced the website's backlink profile</li>
+											<li> Align with SEO best practices and improve credibility.</li>
+										</ul>
+										<p><strong>🔹 Results:</strong></p>
+										<ul>
+											<li>Achieved a significant boost in domain and URL authority, strengthening the site's overall SEO performance.</li>
+											<li>Increased organic traffic by leveraging improved authority and search visibility.</li>
+											<li>Most of the targeted keywords rank in top 5.</li>
+										</ul>
+									</div>
+									<!-- Slide 8 -->
+									<div class="carousel-item">
+										<img src="images/proj8.jpg" class="d-block w-100 img-fluid mb-3" alt="SEO Project 8" style="margin-left: 15px; margin-right: 15px;">
+										<h3> YouTube SEO for "Sahi" Channel, saw an increase of 50% in Daily views in 45 days</h3>
+										<p><strong>🔹 Client:</strong> An NGO's Channel</p>
+										<p><strong>🔹 Details:</strong></p>
+										<ul>
+											<li> Optimized metadata, including titles, descriptions, and tags, to align with top-performing keywords in the niche.</li>
+											<li> Implemented keyword research to target high-volume, low-competition queries relevant to the channel's content.</li>
+											<li> Enhanced video thumbnails and playlists for improved click-through rates and user engagement.</li>
+										</ul>
+										<p><strong>🔹 Results:</strong></p>
+										<ul>
+											<li>Increased daily video views by 50%, even with only 10 videos and no past activity for 1.5 years.</li>
+											<li>Optimized title, description, thumbnails, tags for each video as per the keywords.</li>
+											<li>Improved rankings for top-performing keywords in the channel's niche, driving organic visibility and audience growth.</li>
+										</ul>
+									</div>
+								</div>
+								<!-- Custom Carousel Controls -->
+								<button class="carousel-control-prev" type="button" data-bs-target="#carouselProject1" data-bs-slide="prev" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background-color: transparent; border: none;">
+									<span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: #333; border-radius: 50%; padding: 12px;"></span>
+								</button>
+								<button class="carousel-control-next" type="button" data-bs-target="#carouselProject1" data-bs-slide="next" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background-color: transparent; border: none;">
+									<span class="carousel-control-next-icon" aria-hidden="true" style="background-color: #333; border-radius: 50%; padding: 12px;"></span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+			<!-- Project 2 Modal with Carousel -->
+			<div class="modal fade" id="project2" tabindex="-1" aria-labelledby="project2Label" aria-hidden="true">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title" id="project2Label">Here's a glimpse of Meta Ad Projects I handled.</h4>
+							<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+						</div>
+						<div class="modal-body">
+							<!-- Carousel for Project 2 -->
+							<div id="carouselProject2" class="carousel slide" data-bs-ride="carousel">
+								<div class="carousel-inner">
+									<!-- Slide 1 -->
+									<div class="carousel-item active">
+										<img src="images/meta_proj1.jpg" class="d-block w-100 img-fluid mb-3" alt="Meta Ads Project 1" style="margin-left: 15px; margin-right: 15px;">
+										<h3>Lead Generation Campaign to Collect Data of Interior Designers</h3>
+										<p><strong>🔹 Objective:</strong> Generate high-quality leads from interior designers looking for business growth opportunities.</p>
+										<p><strong>🔹 Platform:</strong> Meta Ads (Facebook & Instagram)</p>
+										<p><strong>🔹 Campaign Details:</strong></p>
+										<ul>
+											<li><strong>Total Leads:</strong> 81</li>
+											<li><strong>Total Spend:</strong> ₹2,965</li>
+											<li><strong>Cost Per Lead (CPL):</strong> ₹36.61</li>
+										</ul>
+										<p><strong>🔹 Challenges:</strong></p>
+										<ul>
+											<li>Reaching interior designers interested in expanding their businesses through targeted Meta ads.</li>
+											<li>Developing compelling ad creatives and messaging that resonate with this specific audience.</li>
+										</ul>
+										<p><strong>🔹 Results:</strong></p>
+										<ul>
+											<li>Successfully captured 81 leads from interior designers at a competitive CPL of ₹36.61.</li>
+											<li>Demonstrated expertise in generating cost-effective leads for niche professional markets.</li>
+										</ul>
+									</div>
+									<!-- Slide 2 -->
+									<div class="carousel-item">
+										<img src="images/meta_proj2.jpg" class="d-block w-100 img-fluid mb-3" alt="Meta Ads Project 2" style="margin-left: 15px; margin-right: 15px;">
+										<h3>Recruitment Cost Optimization</h3>
+										<p><strong>🔹 Client:</strong> Confidential</p>
+										<p><strong>🔹 Objective:</strong> Lower cost per hire for recruitment campaigns.</p>
+										<p><strong>🔹 Results:</strong></p>
+										<ul>
+											<li>Achieved a ₹17.62 cost per result by optimizing targeting, bidding strategies, and ad placements.</li>
+											<li>Significantly reduced recruitment costs for the company.</li>
+										</ul>
+									</div>
+									<!-- Slide 3 -->
+									<div class="carousel-item">
+										<img src="images/meta_proj3.jpg" class="d-block w-100 img-fluid mb-3" alt="Meta Ads Project 3" style="margin-left: 15px; margin-right: 15px;">
+										<h3>Lead Generation Campaign for a Digital Marketing Agency</h3>
+										<p><strong>🔹 Objective:</strong> Generate high-quality leads for a digital marketing agency focused on attracting businesses seeking marketing services.</p>
+										<p><strong>🔹 Platform:</strong> Meta Ads (Facebook & Instagram)</p>
+										<p><strong>🔹 Campaign Details:</strong></p>
+										<ul>
+											<li><strong>Cost Per Lead (CPL):</strong> ₹99.97</li>
+										</ul>
+										<p><strong>🔹 Challenges:</strong></p>
+										<ul>
+											<li>Targeting businesses interested in digital marketing services within a competitive landscape.</li>
+											<li>Creating engaging ads to capture the attention of businesses seeking to grow through digital marketing.</li>
+										</ul>
+										<p><strong>🔹 Results:</strong></p>
+										<ul>
+											<li>Successfully achieved leads at a CPL of ₹99.97, demonstrating the effectiveness of Meta ads in the digital marketing industry.</li>
+										</ul>
+									</div>
+									<!-- Slide 4 -->
+									<div class="carousel-item">
+										<img src="images/meta_proj4.jpg" class="d-block w-100 img-fluid mb-3" alt="Real Estate Lead Generation" style="margin-left: 15px; margin-right: 15px;">
+										<h3>Lead Generation Campaign for Real Estate Client</h3>
+										<p><strong>🔹 Objective:</strong> Generate high-quality leads for a real estate client looking to attract potential buyers or investors.</p>
+										<p><strong>🔹 Platform:</strong> Meta Ads (Facebook & Instagram)</p>
+										<p><strong>🔹 Campaign Details:</strong></p>
+										<ul>
+											<li><strong>Cost Per Lead (CPL):</strong> ₹302</li>
+										</ul>
+										<p><strong>🔹 Challenges:</strong></p>
+										<ul>
+											<li>Targeting real estate prospects in a competitive market while ensuring ad relevance.</li>
+											<li>Crafting ad creatives that effectively capture the attention of potential buyers or investors.</li>
+										</ul>
+										<p><strong>🔹 Results:</strong></p>
+										<ul>
+											<li>Successfully generated leads for the real estate client at a CPL of ₹302.</li>
+											<li>Demonstrated ability to manage and optimize campaigns for high-value industries like real estate.</li>
+										</ul>
+									</div>
+									<!-- Slide 5 -->
+									<div class="carousel-item">
+										<img src="images/meta_proj5.jpg" class="d-block w-100 img-fluid mb-3" alt="Wedding Banquet Lead Generation" style="margin-left: 15px; margin-right: 15px;">
+										<h3>Lead Generation Campaign for Wedding Banquet</h3>
+										<p><strong>🔹 Objective:</strong> Generate high-quality leads for a wedding banquet venue, targeting couples or event planners looking for a wedding venue.</p>
+										<p><strong>🔹 Platform:</strong> Meta Ads (Facebook & Instagram)</p>
+										<p><strong>🔹 Campaign Details:</strong></p>
+										<ul>
+											<li><strong>Cost Per Lead (CPL):</strong> ₹92.55</li>
+										</ul>
+										<p><strong>🔹 Challenges:</strong></p>
+										<ul>
+											<li>Reaching engaged couples and event planners who are actively looking for wedding venues.</li>
+											<li>Creating visually appealing and compelling ads that resonate with the audience's needs for a wedding banquet.</li>
+										</ul>
+										<p><strong>🔹 Results:</strong></p>
+										<ul>
+											<li>Successfully generated leads for the wedding banquet venue at a CPL of ₹92.55.</li>
+											<li>Demonstrated the ability to create and optimize campaigns for the event industry, focusing on high-intent leads.</li>
+										</ul>
+									</div>
+									<!-- Slide 6 -->
+									<div class="carousel-item">
+										<img src="images/meta_proj6.jpg" class="d-block w-100 img-fluid mb-3" alt="High-Ticket Real Estate Lead Generation" style="margin-left: 15px; margin-right: 15px;">
+										<h3>Meta Lead-Gen Ad Campaign for High-Ticket Real Estate Clients in Delhi NCR</h3>
+										<p><strong>🔹 Objective:</strong> Generate leads for premium real estate projects targeting high-value clients.</p>
+										<p><strong>🔹 Platform:</strong> Meta Ads (Facebook & Instagram)</p>
+										<p><strong>🔹 Results:</strong></p>
+										<ul>
+											<li>Achieved an average CPL ranging from ₹500 to ₹1,000 while maintaining high lead quality.</li>
+										</ul>
+									</div>
+								</div>
+								<!-- Custom Carousel Controls -->
+								<button class="carousel-control-prev" type="button" data-bs-target="#carouselProject2" data-bs-slide="prev" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background-color: transparent; border: none;">
+									<span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: #333; border-radius: 50%; padding: 12px;"></span>
+								</button>
+								<button class="carousel-control-next" type="button" data-bs-target="#carouselProject2" data-bs-slide="next" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background-color: transparent; border: none;">
+									<span class="carousel-control-next-icon" aria-hidden="true" style="background-color: #333; border-radius: 50%; padding: 12px;"></span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+			<!-- Project 3 Modal with Carousel -->
+			<div class="modal fade" id="project3" tabindex="-1" aria-labelledby="project3Label" aria-hidden="true">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title" id="project3Label">Google Ads Projects</h4>
+							<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+						</div>
+						<div class="modal-body">
+							<!-- Carousel for Project 3 -->
+							<div id="carouselProject3" class="carousel slide" data-bs-ride="carousel">
+								<div class="carousel-inner">
+									<!-- Slide 1: Google Ads for Agency -->
+									<div class="carousel-item active">
+										<img src="images/google_ads_proj_1.jpg" class="d-block w-100 img-fluid mb-3" alt="Google Ads Campaign for Agency">
+										<h3>Google Ad Campaigns for Agency</h3>
+										<p><strong>🔹 Objective:</strong> Drive clicks and traffic efficiently through paid ad campaigns.</p>
+										<p><strong>🔹 Campaign Details:</strong></p>
+										<ul>
+											<li>Launched multiple ad campaigns targeting diverse audiences.</li>
+											<li>Optimized performance via keyword research, audience segmentation, and budget allocation.</li>
+										</ul>
+										<p><strong>🔹 Results:</strong></p>
+										<ul>
+											<li><strong>Total Clicks:</strong> 7,827</li>
+											<li><strong>Total Spend:</strong> ₹2,503</li>
+											<li><strong>Cost Per Click (CPC):</strong> ₹0.32</li>
+											<li>Successfully drove high-quality traffic while maximizing ROI.</li>
+										</ul>
+									</div>
+									<!-- Slide 2: YouTube Campaign for NGO (133,000 Views) -->
+									<div class="carousel-item">
+										<img src="images/google_ads_proj_2.jpg" class="d-block w-100 img-fluid mb-3" alt="YouTube Campaign for NGO">
+										<h3>YouTube Campaign for NGO in Women's Reproductive Health</h3>
+										<p><strong>🔹 Objective:</strong> Raise awareness and promote the NGO's YouTube channel.</p>
+										<p><strong>🔹 Challenges:</strong></p>
+										<ul>
+											<li>Navigating Google's strict advertising policies for sensitive topics.</li>
+											<li>Ensuring compliance while effectively reaching the target audience.</li>
+										</ul>
+										<p><strong>🔹 Campaign Details:</strong></p>
+										<ul>
+											<li><strong>Platform:</strong> Google Ads (YouTube)</li>
+											<li><strong>Average Cost Per View (CPV):</strong> ₹0.17</li>
+											<li><strong>Total Views:</strong> 133,000</li>
+										</ul>
+										<p><strong>🔹 Results:</strong></p>
+										<ul>
+											<li>Expanded the NGO's online presence while staying within compliance.</li>
+											<li>Delivered valuable educational content at a minimal CPV.</li>
+										</ul>
+									</div>
+									<!-- Slide 3: YouTube Campaign for NGO (48,000 Views) -->
+									<div class="carousel-item">
+										<img src="images/google_ads_proj_3.jpg" class="d-block w-100 img-fluid mb-3" alt="YouTube Campaign for NGO 2">
+										<h3>YouTube Campaign for NGO (Women's Health Awareness)</h3>
+										<p><strong>🔹 Objective:</strong> Promote the NGO's YouTube channel while complying with Google's ad policies.</p>
+										<p><strong>🔹 Campaign Details:</strong></p>
+										<ul>
+											<li><strong>Duration:</strong> 14 days</li>
+											<li><strong>Total Views:</strong> 48,000</li>
+											<li><strong>Ad Spend:</strong> ₹13,100</li>
+											<li><strong>Average CPV:</strong> ₹0.27</li>
+										</ul>
+										<p><strong>🔹 Challenges:</strong></p>
+										<ul>
+											<li>Overcoming Google's strict policies for advertising sensitive topics.</li>
+											<li>Maintaining audience targeting effectiveness while staying compliant.</li>
+										</ul>
+										<p><strong>🔹 Results:</strong></p>
+										<ul>
+											<li>Successfully delivered 48,000 views in 14 days.</li>
+											<li>Enhanced the NGO's visibility and audience engagement.</li>
+										</ul>
+									</div>
+								</div>
+								<!-- Custom Carousel Controls -->
+								<button class="carousel-control-prev" type="button" data-bs-target="#carouselProject3" data-bs-slide="prev" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background-color: transparent; border: none;">
+									<span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: #333; border-radius: 50%; padding: 12px;"></span>
+								</button>
+								<button class="carousel-control-next" type="button" data-bs-target="#carouselProject3" data-bs-slide="next" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background-color: transparent; border: none;">
+									<span class="carousel-control-next-icon" aria-hidden="true" style="background-color: #333; border-radius: 50%; padding: 12px;"></span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+			<!-- Project 4 Modal (Simple Popup) -->
+			<div class="modal fade" id="project4" tabindex="-1" aria-labelledby="project4Label" aria-hidden="true">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title" id="project4Label">Social Media Management Projects</h4>
+							<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+						</div>
+						<div class="modal-body">
+							<img src="images/proj_4.jpg" class="d-block w-100 img-fluid mb-3" alt="Social Media Management Project">
+							<p><strong>🔹 Objective:</strong> Develop and manage social media content calendars, collaborate with designers, and publish optimized posts.</p>
+							<p><strong>🔹 Details:</strong></p>
+							<ul>
+								<li>Created content calendars based on thorough research.</li>
+								<li>Collaborated with video editors and graphic designers.</li>
+								<li>Published posts with relevant and trending hashtags.</li>
+							</ul>
+							<p><strong>🔹 Results:</strong></p>
+							<ul>
+								<li>Increased engagement rates across all platforms.</li>
+								<li>Improved brand visibility and follower growth.</li>
+							</ul>
+							<p>Check out some of the creatives and ads: <a href="https://drive.google.com/drive/folders/1B1H-0bZeUvO6Wo2Xv27iVjmZvRpeQvyN?usp=sharing" target="_blank">Google Drive Link</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+			<!-- Project 5 Modal (Popup with Carousel) -->
+			<div class="modal fade" id="project5" tabindex="-1" aria-labelledby="project5Label" aria-hidden="true">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title" id="project5Label">Email Marketing Projects</h4>
+							<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+						</div>
+						<div class="modal-body">
+							<!-- Carousel for Project 5 -->
+							<div id="carouselProject5" class="carousel slide" data-bs-ride="carousel">
+								<div class="carousel-inner">
+									<!-- Slide 1 -->
+									<div class="carousel-item active">
+										<img src="images/em_1.jpg" class="d-block w-100 img-fluid mb-3" alt="Email Marketing Campaign">
+										<h3>Email Marketing Campaign for Link-Building</h3>
+										<p><strong>🔹 Objective:</strong> Enhance the website's backlink profile through targeted email outreach.</p>
+										<p><strong>🔹 Campaign Details:</strong></p>
+										<ul>
+											<li><strong>Emails Sent:</strong> 867</li>
+											<li><strong>Emails Opened:</strong> 617 (71.2% open rate)</li>
+											<li><strong>Responses Received:</strong> 74 (8.5% response rate)</li>
+											<li><strong>Emails Clicked:</strong> 103 (11.9% click-through rate)</li>
+											<li><strong>Emails Bounced:</strong> 56 (6.5% bounce rate)</li>
+										</ul>
+										<p><strong>🔹 Results:</strong></p>
+										<ul>
+											<li>Established connections with 74 potential partners for link-building.</li>
+											<li>Achieved a strong open rate and click-through rate, demonstrating effective targeting and subject line optimization.</li>
+										</ul>
+									</div>
+									<!-- Slide 2 -->
+									<div class="carousel-item">
+										<img src="images/em_2.jpg" class="d-block w-100 img-fluid mb-3" alt="Email Marketing Campaign">
+										<h3>Email Marketing Campaign for Outreach</h3>
+										<p><strong>🔹 Objective:</strong> Engage a targeted audience and drive responses through email marketing.</p>
+										<p><strong>🔹 Campaign Details:</strong></p>
+										<ul>
+											<li><strong>Emails Sent:</strong> 7,569</li>
+											<li><strong>Emails Opened:</strong> 2,061 (27.2% open rate)</li>
+											<li><strong>Responses Received:</strong> 196 (2.6% response rate)</li>
+											<li><strong>Emails Clicked:</strong> 544 (7.2% click-through rate)</li>
+											<li><strong>Emails Bounced:</strong> 886 (11.7% bounce rate)</li>
+										</ul>
+										<p><strong>🔹 Results:</strong></p>
+										<ul>
+											<li>Generated 196 responses from a large audience.</li>
+											<li>Achieved a notable click-through rate, showcasing effective email design and content.</li>
+										</ul>
+									</div>
+								</div>
+								<!-- Custom Carousel Controls -->
+								<button class="carousel-control-prev" type="button" data-bs-target="#carouselProject5" data-bs-slide="prev" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background-color: transparent; border: none;">
+									<span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: #333; border-radius: 50%; padding: 12px;"></span>
+								</button>
+								<button class="carousel-control-next" type="button" data-bs-target="#carouselProject5" data-bs-slide="next" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background-color: transparent; border: none;">
+									<span class="carousel-control-next-icon" aria-hidden="true" style="background-color: #333; border-radius: 50%; padding: 12px;"></span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+			<!-- Project 6 Modal (Simple Popup) -->
+			<div class="modal fade" id="project6" tabindex="-1" aria-labelledby="project6Label" aria-hidden="true">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title" id="project6Label">Power BI Dashboard Projects</h4>
+							<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+						</div>
+						<div class="modal-body">
+							<img src="images/proj_6.jpg" class="d-block w-100 img-fluid mb-3" alt="Power Bi Dashboard">
+							<h3>Power BI Dashboard for Writing Team Performance Analysis</h3>
+							<p><strong>🔹 Client:</strong> Corporate Writing Team</p>
+							<p><strong>🔹 Platform:</strong> Power BI Dashboard</p>
+							<p><strong>🔹 Details:</strong></p>
+							<ul>
+								<li>Developed an interactive dashboard to monitor key performance metrics for the writing team.</li>
+								<li>Integrated data sources to track article submissions, quality scores, deadlines met, and team productivity.</li>
+								<li>Designed user-friendly visuals, including bar charts, slicers, and KPIs for quick insights and decision-making.</li>
+							</ul>
+							<p><strong>🔹 Results:</strong></p>
+							<ul>
+								<li>Enhanced management's ability to monitor team performance in real time.</li>
+								<li>Improved data-driven decision-making by highlighting areas needing attention, such as missed deadlines or low-quality submissions.</li>
+								<li>Streamlined workflow management through actionable insights.</li>
+							</ul>
+							<p>Check out the whole project on powerbi: <a href="https://app.powerbi.com/view?r=eyJrIjoiMjU3Y2IwMWEtMTBlMC00YmIzLTliMGYtOTk0NTNlMTk5ZmRiIiwidCI6IjM0YmQ4YmVkLTJhYzEtNDFhZS05ZjA4LTRlMGEzZjExNzA2YyJ9" target="_blank">Power BI Link</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+			<div class="row justify-content-center mt-5">
+				<div class="col-md-6 text-center ftco-animate">
+					<p><a href="https://www.canva.com/design/DAGfTBybLQQ/5ESJj-hw4_nNenBsSPlH_g/edit/" class="btn btn-primary py-4 px-5">See Full portfolio</a></p>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+		<div class="container">
+			<div class="row d-md-flex align-items-center">
+				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="20">0</strong>
+							<span>Achievements</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="30">0</strong>
+							<span>Projects</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="100000">0</strong>
+							<span>Keywords Ranked</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+					<div class="block-18">
+						<div class="text">
+							<strong class="number" data-number="100">0</strong>
+							<span>Ad Campaigns</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Also check out my <span>PPT </span> </h2>
+					<div class="heading">
+						<h4> I love to solve business problems &amp; help them by increasing revenue, ROI and ultimately
+							creating brand. </h4>
+						<br>
+						<p><a href="https://www.canva.com/design/DAGfTBybLQQ/5ESJj-hw4_nNenBsSPlH_g/edit/"
+								class="btn btn-primary py-3 px-5">PPT Link</a></p>
+					</div>
+				</div>
+			</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Contact</h1>
+					<h2 class="mb-4">Contact Me</h2>
+					<p>Below are the details to reach out to me!</p>
+				</div>
+			</div>
+
+			<div class="row d-flex contact-info mb-5">
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-map-signs"></span>
+						</div>
+						<h3 class="mb-4">Address</h3>
+						<p>Karnal, India</p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-phone2"></span>
+						</div>
+						<h3 class="mb-4">Contact Number</h3>
+						<p><a href="tel:+917404530955">+91-7404530955</a></p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-paper-plane"></span>
+						</div>
+						<h3 class="mb-4">Email Address</h3>
+						<p><a href="mailto:arorajagrit01@gmail.com">arorajagrit01@gmail.com</a></p>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box p-4 text-center">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-globe"></span>
+						</div>
+						<h3 class="mb-4">Download Resume</h3>
+						<p><a href="https://drive.google.com/file/d/1gEqpwnBlKZzclJkcUx968dFBFfP9WdjH/view?usp=sharing">Resume
+								Link</a></p>
+					</div>
+				</div>
+
+				<div class="container">
+					<br>
+					<br>
+					<div class="row justify-content-center">
+						<div class="col-md-7 ftco-animate text-center">
+							<h2>Have a<span> Question? </span> <a href="https://forms.gle/MRkirgbY9nZrWDEeA"
+									class="btn btn-primary py-3 px-5">Click Here</a> </h2>
+						</div>
+					</div>
+					<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+						<li class="ftco-animate normal-txt">Find me on </li>
+						<li class="ftco-animate"><a href="https://www.linkedin.com/in/jagrit-arora/"><span
+									class="icon-linkedin"></span></a></li>
+						<li class="ftco-animate"><a href="https://x.com/jagrit_01"><span
+									class="icon-twitter"></span></a></li>
+						<li class="ftco-animate"><a href="https://www.facebook.com/jagrit.arora01/"><span
+									class="icon-facebook"></span></a></li>
+						<li class="ftco-animate"><a href="https://www.instagram.com/jagrit_arora01/"><span
+									class="icon-instagram"></span></a></li>
+					</ul>
+					<br>
+				</div>
+			</div>
+	</section>
+
+
+
+
+	<!-- <footer class="ftco-footer ftco-section"> -->
+	<!-- <div class="container"> -->
+	<!-- <div class="row"> -->
+	<!-- <div class="col-md-12 text-center"> -->
+
+	<!-- <p>Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	<!-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <i class="icon-heart color-danger" aria-hidden="true"></i> by Jagrit Arora. -->
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.</p> -->
+	<!-- </div> -->
+	<!-- </div> -->
+	<!-- </div> -->
+	<!-- </footer> -->
+
+
+	<!-- loader -->
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" />
+		</svg></div>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
